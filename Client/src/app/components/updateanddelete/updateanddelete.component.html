@@ -1,0 +1,16 @@
+<form (ngSubmit)="createOrUpdate()">
+  <div class="form-group">
+    <label for="id">ID</label>
+    <input type="text" name="_id" [(ngModel)]="contact._id" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" name="name" [(ngModel)]="contact.name" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="id">Phone</label>
+    <input type="text" name="phone" [(ngModel)]="contact.phone" class="form-control">
+  </div>
+  <input type="submit" value="Submit" class="btn btn-success">
+</form>
+
